@@ -1,0 +1,14 @@
+{% load localeurl_tags %}
+{% load i18n %}
+
+<div id="topbar">
+    <ul id='action' class='action'>
+        <li class='ui-widget ui-button ui-state-default ui-corner-all  ui-state-active'>
+            <a href='{% locale_url LANGUAGE_CODE chimere:index %}' onclick='jQuery("#map").chimere("saveExtent");'>{% trans "View"%}</a>
+        </li>
+        <li class='ui-widget ui-button ui-state-default ui-corner-all '>
+            <a href='{% locale_url LANGUAGE_CODE chimere:edit %}' onclick='jQuery("#map").chimere("saveExtent");'>{% trans "Report a problem" %}</a>
+        </li>
+    </ul>
+    <ul id='action2' class='action'></ul>
+</div>

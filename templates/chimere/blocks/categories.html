@@ -1,0 +1,29 @@
+{% load i18n %}
+<ul id='ul_categories'>
+    {% for category, lst_sub_categories in sub_categories %}
+    <li>
+        <img class="control_image toggle_category" id="maincategory_img_{{category.id}}" alt="control" src="{{ STATIC_URL }}chimere/img/{% if category.selected %}minus.png{% else %}plus.png{% endif %}" />
+        <input type="checkbox" id='checkall_{{category.id}}'>
+        {% trans category.name %}
+        <img id="zoom_to_category_{{category.id}}" class="zoom_image zoom_to_category" alt='{% trans "Zoom to" %} {{category.name}}' src='{{ STATIC_URL }}chimere/img/zoom.png' />
+        <ul class='subcategories' id='maincategory_{{category.id}}'{% if not category.selected %} style='display:None'{% endif %}>
+            {% for sub_category in lst_sub_categories %}
+            <li id='li_sub_{{sub_category.id}}'>
+                <input type='checkbox' name='category_{{sub_category.id}}' id='category_{{sub_category.id}}'{% if sub_category.selected %} checked='checked'{% endif %}/>
+                <label for='category_{{sub_category.id}}'>
+                    <img alt='{{ sub_category.name }}' src='{{ MEDIA_URL }}{{sub_category.icon.image}}'/>
+                    {% trans sub_category.name %}
+                </label>
+                <img id="zoom_to_subcategory_{{sub_category.id}}" class="zoom_image zoom_to_subcategory" alt='{% trans "Zoom to" %} {{sub_category.name}}' src='{{ STATIC_URL }}chimere/img/zoom.png' />
+            </li>
+            {% endfor %}
+            {% if category.description %}
+                <li><a href="#" onclick="$('#map').chimere('category_detail', {{category.id}});">{% trans "Tell me more..." %}</a></li>
+            {% endif %}
+        </ul>
+    </li>
+    {% endfor %}
+    <li id='display_submited'>
+        <input type='checkbox' name='display_submited' id='display_submited_check'/> {% trans "Display markers and routes waiting for validation"%}
+    </li>
+</ul>

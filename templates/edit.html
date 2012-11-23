@@ -1,0 +1,155 @@
+{% extends "chimere/base.html" %}
+{% load i18n chimere_tags adminmedia inline_formset%}
+{% block extra_head %}
+    {{ form.media }}
+    {{ block.super }}
+    {% head_chimere %}
+    {% if dated %}
+        <!--script type="text/javascript" src="{{extra_url}}media/js/core.js"></script-->
+        <script type="text/javascript" src="{{ STATIC_URL }}chimere/js/utils.js"></script>
+        <script type="text/javascript">
+        window.__admin_media_prefix__ = "{% filter escapejs %}{% admin_media_prefix %}{% endfilter %}";
+        </script>
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    {{ block.super }}
+    {% if submited %}{% submited %}{% endif %}
+    {% if error_message %}<fieldset class='edit errorlist'>
+        <legend>{% trans "Error" %}</legend>
+        <p>{{ error_message }}</p>
+    {% endif %}</fieldset>
+    <fieldset class='edit'>
+    <legend>{% trans "Report a problem" %}</legend>
+    <form enctype="multipart/form-data" method='post' action='.'>
+    {% csrf_token %}
+    <div class='rightWrapper'>
+        <div class='rightform'>
+            <div class="fieldWrapper">
+                <label for="id_point">{% trans "Point"%} *</label>
+                {%if form.point.errors %}<ul class="errorlist"><li>{% trans "Select a location for this new site" %}</li></ul>{%endif%}
+                {{point_widget}}
+            </div>
+        </div>
+    </div>
+    <div class='leftform'>
+        <p>* {% trans "indicates a mandatory field" %}</p>
+        <div class="fieldWrapper">
+            <label for="id_name">{% trans "Name"%} *</label>
+            {% if form.name.errors %}<div class='errors'>{{ form.name.errors }}</div>{% endif %}
+            {{ form.name }}
+        </div>
+        <div class="fieldWrapper">
+          <label for="id_subcategory">{% trans "Categories" %} *</label>
+            {% if form.categories.errors %}<div class='errors'>{{ form.categories.errors }}</div>{% endif %}
+          {{ form.categories }}
+        </div>
+        <div class="fieldWrapper">
+            <label for="id_description">{% trans "Description" %}</label>
+            {{ form.description.errors }}
+            {{ form.description }}
+            <p class="help">{{ form.description.help_text }}</p>
+        </div>
+        {% if dated %}
+        <div class="fieldWrapper">
+            <label for="id_start_date">{% trans "Start date" %}</label>
+            {{ form.start_date.errors }}
+            {{ form.start_date }}
+            <p class="help">{{ form.start_date.help_text }}</p>
+        </div>
+        <div class="fieldWrapper">
+            <label for="id_end_date">{% trans "End date" %}</label>
+            {{ form.end_date.errors }}
+            {{ form.end_date }}
+            <p class="help">{{ form.end_date.help_text }}</p>
+        </div>
+        {% endif %}
+    </div>
+    <div class='bottomform'>
+        {% for field in form %}
+            {% for property in properties %}
+                {% ifequal field.name property.getNamedId %}
+                    <div class="fieldWrapper">
+                        <label for="id_{{field.name}}">{% trans field.label %}{% if property.mandatory %} *{% endif %}</label>
+                        {% if field.errors %}<div class='errors'>{{ field.errors }}</div>{% endif %}
+                        {{ field }}
+                    </div>
+                {%endifequal%}
+            {%endfor%}
+        {%endfor%}
+
+        {% inline_formset "Multimedia files" formset_multi %}
+        {% inline_formset "Picture files" formset_picture %}
+
+        {% if filtered_properties %}
+        <script type='text/javascript'>
+            var cat_filters = new Array();
+            var cat_to_hide = new Array();
+            {% for property in filtered_properties %}
+            cat_to_hide.push('#id_{{property.getNamedId}}');
+            {% for subcat in property.subcategories.all %}
+            if(!cat_filters['{{subcat.id}}']) cat_filters['{{subcat.id}}'] = new Array();
+            cat_filters['{{subcat.id}}'].push('#id_{{property.getNamedId}}');
+            {% endfor %}
+            {% endfor %}
+            $('#id_categories').change(function(){
+                for (idx in cat_to_hide){
+                    $(cat_to_hide[idx]).parent().hide();
+                }
+                var vals = $(this).val();
+                for (val_id in vals){
+                    var val = vals[val_id];
+                    for (ids in cat_filters[val]){
+                        $(cat_filters[val][ids]).parent().show();
+                    }
+                }
+            });
+            $('#id_categories').change();
+        </script>
+        {% endif %}
+    </div>
+    <div class='personalform'>
+        <h3>{% trans "Personal information"%}</h3>
+        <div class='warning'>
+        {% trans "This fields are not mandatory. If you provided them they not will be made public and they will only used to join you for this project."%}
+        </div>
+        <div class="fieldWrapper">
+            <label for="id_submiter_name">{% trans "Your name or nickname"%}</label>
+            {% if form.submiter_name.errors %}<div class='errors'>{{ form.submiter_name.errors }}</div>{% endif %}
+            {{ form.submiter_name }}
+        </div>
+        <div class="fieldWrapper">
+            <label for="id_submiter_email">{% trans "Your email"%}</label>
+            {% if form.submiter_email.errors %}<div class='errors'>{{ form.submiter_email.errors }}</div>{% endif %}
+            {{ form.submiter_email }}
+        </div>
+        <div class="fieldWrapper">
+            <label for="id_submiter_comment">{% trans "Comments about your submission"%}</label>
+            {% if form.submiter_comment.errors %}<div class='errors'>{{ form.submiter_comment.errors }}</div>{% endif %}
+            {{ form.submiter_comment }}
+        </div>
+    </div>
+    <div id='upload_in_progress'>
+        <p>{% trans "Upload in progress. Please wait..." %}</p>
+        <p><img src='{{STATIC_URL}}chimere/img/ajax-loader.gif'/></p>
+    </div>
+    <script text='text/javascript'>
+            $( "#upload_in_progress" ).dialog({
+                 modal: true,
+                 resizable:false,
+                 height:110,
+                 autoOpen:false
+                }
+            );
+        $(".ui-dialog-titlebar").hide();
+        function displayProgress(){
+            $("#upload_in_progress").dialog('open');
+            return true;
+        }
+    </script>
+    <p><input type='submit' onclick='saveExtent();displayProgress();' value="{% trans 'Propose'%}"/></p>
+    </form>
+    </fieldset>
+    </div>
+{% endblock %}

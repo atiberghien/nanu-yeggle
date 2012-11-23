@@ -1,0 +1,904 @@
+# Chimère
+# Copyright (C) 2008-2012
+# This file is distributed under the same license as the Chimère package.
+# Étienne Loks <etienne.loks@peacefrogs.net>, 2008-2011.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-11-22 14:27+0100\n"
+"PO-Revision-Date: 2012-11-22 14:29\n"
+"Last-Translator:   <admin@plop.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.6.8\n"
+
+#: templates/edit.html:20
+msgid "Error"
+msgstr "Erreur"
+
+#: templates/edit.html:24
+msgid "Report a problem"
+msgstr "Signaler un problème"
+
+#: templates/edit.html:30
+msgid "Point"
+msgstr "Point"
+
+#: templates/edit.html:31
+msgid "Select a location for this new site"
+msgstr "Choisissez une localisation pour ce nouveau site"
+
+#: templates/edit.html:37
+msgid "indicates a mandatory field"
+msgstr "indique un champ obligatoire"
+
+#: templates/edit.html:39
+msgid "Name"
+msgstr "Nom"
+
+#: templates/edit.html:44
+msgid "Categories"
+msgstr "Catégories"
+
+#: templates/edit.html:49
+msgid "Description"
+msgstr "Description"
+
+#: templates/edit.html:56
+msgid "Start date"
+msgstr "Date de début"
+
+#: templates/edit.html:62
+msgid "End date"
+msgstr "Date de fin"
+
+#: templates/edit.html:113
+msgid "Personal information"
+msgstr "Informations personnelles"
+
+#: templates/edit.html:115
+msgid ""
+"This fields are not mandatory. If you provided them they not will be made "
+"public and they will only used to join you for this project."
+msgstr ""
+"Ces champs ne sont pas obligatoires. Si vous les renseignez, ils ne seront "
+"pas publiés et ne seront utilisés seulement pour vous joindre dans le cadre "
+"de ce projet."
+
+#: templates/edit.html:118
+msgid "Your name or nickname"
+msgstr "Votre nom ou pseudo"
+
+#: templates/edit.html:123
+msgid "Your email"
+msgstr "Votre courriel"
+
+#: templates/edit.html:128
+msgid "Comments about your submission"
+msgstr "Commentaires au sujet de votre proposition"
+
+#: templates/edit.html:134
+msgid "Upload in progress. Please wait..."
+msgstr "Dépôt en cours. Veuillez patienter..."
+
+#: templates/edit.html:151
+msgid "Propose"
+msgstr "Proposez"
+
+#~ msgid "Multimedia files"
+#~ msgstr "Fichiers multimedias"
+
+#~ msgid "Picture files"
+#~ msgstr "Fichiers d'image"
+
+#~ msgid "View"
+#~ msgstr "Voir"
+
+#~ msgid "Contribute"
+#~ msgstr "Participer"
+
+#~ msgid "Add a new point of interest"
+#~ msgstr "Ajout d'un point remarquable"
+
+#~ msgid "Add a new route"
+#~ msgstr "Ajout d'un nouveau trajet"
+
+#~ msgid "RSS feeds"
+#~ msgstr "Flux RSS"
+
+#~ msgid "Contact us"
+#~ msgstr "Nous contacter"
+
+#~ msgid "Validate"
+#~ msgstr "Valider"
+
+#~ msgid "Export to KML"
+#~ msgstr "Exporter en KML"
+
+#~ msgid "Export to Shapefile"
+#~ msgstr "Exporter en Shapefile"
+
+#~ msgid "Export to CSV"
+#~ msgstr "Exporter en CSV"
+
+#~ msgid "Import"
+#~ msgstr "Import"
+
+#~ msgid "Cancel import"
+#~ msgstr "Annuler l'import"
+
+#~ msgid "Cancel export"
+#~ msgstr "Annuler l'export"
+
+#~ msgid "Export to osm"
+#~ msgstr "Exporter vers osm"
+
+#~ msgid "Last points of interest"
+#~ msgstr "Derniers points d'intérêt"
+
+#~ msgid "Latest points of interest from "
+#~ msgstr "Nouveaux points d'intérêt de "
+
+#~ msgid "Last points of interest by area"
+#~ msgstr "Nouveaux points d'intérêt par zone"
+
+#~ msgid "New submission for"
+#~ msgstr "Nouvelle proposition pour"
+
+#~ msgid "The new item \"%s\" has been submited in the category: "
+#~ msgstr "Le nouvel élément « %s » a été proposé dans la catégorie : "
+
+#~ msgid "To valid, precise or unvalid this item: "
+#~ msgstr "Pour valider, préciser ou rejeter cet élément : "
+
+#~ msgid "Email (optional)"
+#~ msgstr "Courriel (optionnel) "
+
+#~ msgid "Object"
+#~ msgstr "Objet"
+
+#~ msgid "Shapefiles must be provided in a zipped archive."
+#~ msgstr ""
+#~ "Les fichiers Shapefiles doivent être fournis regroupés dans une archive zip."
+
+#~ msgid "You have to set \"source\" or \"source file\" but not both."
+#~ msgstr ""
+#~ "Vous devez spécifier le champ « Source » ou « Fichier source » mais pas les "
+#~ "deux."
+
+#~ msgid "You have to set \"source\" or \"source file\"."
+#~ msgstr "Vous devez spécifier le champ « Source » ou « Fichier source »."
+
+#~ msgid "End date has been set with no start date"
+#~ msgstr "Une date de fin a été donnée sans date de début"
+
+#~ msgid "End date can't be before start date"
+#~ msgstr "La date de fin ne peut pas être antérieure à la date de début"
+
+#~ msgid "This field is mandatory for the selected categories"
+#~ msgstr "Ce champ est obligatoire pour les catégories sélectionnées"
+
+#~ msgid "File"
+#~ msgstr "Fichier"
+
+#~ msgid "Bad file format: this must be a GPX or KML file"
+#~ msgstr "Mauvais format de fichier : KML et GPX sont supportés"
+
+#~ msgid "Area"
+#~ msgstr "Zone"
+
+#~ msgid "Available"
+#~ msgstr "Disponible"
+
+#~ msgid "Date"
+#~ msgstr "Date"
+
+#~ msgid "Associated areas"
+#~ msgstr "Zones associées"
+
+#~ msgid "News"
+#~ msgstr "Nouvelle"
+
+#~ msgid "Parameters"
+#~ msgstr "Paramètres"
+
+#~ msgid "TinyUrl"
+#~ msgstr "Mini-url"
+
+#~ msgid "Color theme"
+#~ msgstr "Thème de couleur"
+
+#~ msgid "Code"
+#~ msgstr "Code"
+
+#~ msgid "Order"
+#~ msgstr "Ordre"
+
+#~ msgid "Color"
+#~ msgstr "Couleur"
+
+#~ msgid "Category"
+#~ msgstr "Catégorie"
+
+#~ msgid "Image"
+#~ msgstr "Image"
+
+#~ msgid "Height"
+#~ msgstr "Hauteur"
+
+#~ msgid "Width"
+#~ msgstr "Largeur"
+
+#~ msgid "Icon"
+#~ msgstr "Icône"
+
+#~ msgid "Available for submission"
+#~ msgstr "Disponible pour soumission"
+
+#~ msgid "Marker"
+#~ msgstr "Point d'intérêt"
+
+#~ msgid "Route"
+#~ msgstr "Trajet"
+
+#~ msgid "Both"
+#~ msgstr "Mixte"
+
+#~ msgid "Item type"
+#~ msgstr "Type d'élément"
+
+#~ msgid "Sub-category"
+#~ msgstr "Sous-catégorie"
+
+#~ msgid "Sub-categories"
+#~ msgstr "Sous-catégories"
+
+#~ msgid "Importer type"
+#~ msgstr "Type d'import"
+
+#~ msgid "Source"
+#~ msgstr "Source"
+
+#~ msgid "Source file"
+#~ msgstr "Fichier source"
+
+#~ msgid "Filter"
+#~ msgstr "Filtre"
+
+#~ msgid "Name by default"
+#~ msgstr "Nom par défaut"
+
+#~ msgid "SRID"
+#~ msgstr "SRID"
+
+#~ msgid "Zipped file"
+#~ msgstr "Fichier zippé"
+
+#~ msgid "Origin"
+#~ msgstr "Origine"
+
+#~ msgid "License"
+#~ msgstr "Licence"
+
+#~ msgid "Associated subcategories"
+#~ msgstr "Sous-catégories associées"
+
+#~ msgid "State"
+#~ msgstr "État"
+
+#~ msgid "Importer"
+#~ msgstr "Import"
+
+#~ msgid "Submitter session key"
+#~ msgstr "Clé de session du demandeur"
+
+#~ msgid "Submitter name or nickname"
+#~ msgstr "Nom ou pseudo du demandeur"
+
+#~ msgid "Submitter email"
+#~ msgstr "Courriel du demandeur"
+
+#~ msgid "Submitter comment"
+#~ msgstr "Commentaire du demandeur"
+
+#~ msgid "Submited"
+#~ msgstr "Soumis"
+
+#~ msgid "Modified"
+#~ msgstr "Modifié"
+
+#~ msgid "Disabled"
+#~ msgstr "Désactivé"
+
+#~ msgid "Imported"
+#~ msgstr "Importé"
+
+#~ msgid "Excluded"
+#~ msgstr "Exclu"
+
+#~ msgid "Status"
+#~ msgstr "État"
+
+#~ msgid "Import key"
+#~ msgstr "Clé d'import"
+
+#~ msgid "Import version"
+#~ msgstr "Version de l'import"
+
+#~ msgid "Modified since last import"
+#~ msgstr "Modifié depuis le dernier import"
+
+#~ msgid "Not to be imported inside OSM"
+#~ msgstr "À ne pas importer dans OSM"
+
+#~ msgid "Not mandatory. Set it for dated item such as event. Format YYYY-MM-DD"
+#~ msgstr ""
+#~ "Optionnel. Précisez ce champ pour les éléments datés comme un événement. "
+#~ "Format du champ : AAAA-MM-JJ"
+
+#~ msgid ""
+#~ "Not mandatory. Set it only if you have a multi-day event. Format YYYY-MM-DD"
+#~ msgstr ""
+#~ "Optionnel. Précisez ce champ seulement pour des événements durant plusieurs "
+#~ "jours. Format du champ : AAAA-MM-JJ"
+
+#~ msgid "Reference marker"
+#~ msgstr "Point d'intérêt de référence"
+
+#~ msgid "Localisation"
+#~ msgstr "Localisation"
+
+#~ msgid "Available Date"
+#~ msgstr "Date de mise en disponibilité"
+
+#~ msgid "Point of interest"
+#~ msgstr "Point d'intérêt"
+
+#~ msgid "Audio"
+#~ msgstr "Audio"
+
+#~ msgid "Video"
+#~ msgstr "Vidéo"
+
+#~ msgid "Other"
+#~ msgstr "Autre"
+
+#~ msgid "Media type"
+#~ msgstr "Type de media"
+
+#~ msgid "Mime type"
+#~ msgstr "Type mime"
+
+#~ msgid "Inside an iframe"
+#~ msgstr "À l'intérieur d'un iframe"
+
+#~ msgid "Multimedia type"
+#~ msgstr "Type de multimedia"
+
+#~ msgid "Multimedia types"
+#~ msgstr "Types de multimedia"
+
+#~ msgid "Url"
+#~ msgstr "Url"
+
+#~ msgid "Display inside the description?"
+#~ msgstr "Apparaît dans la description ?"
+
+#~ msgid "Multimedia file"
+#~ msgstr "Fichier multimedia"
+
+#~ msgid "Thumbnail"
+#~ msgstr "Miniature"
+
+#~ msgid "Thumbnail height"
+#~ msgstr "Hauteur de la miniature"
+
+#~ msgid "Thumbnail width"
+#~ msgstr "Largeur de la miniature"
+
+#~ msgid "Picture file"
+#~ msgstr "Fichier d'image"
+
+#~ msgid "Raw file (gpx or kml)"
+#~ msgstr "Fichier brut (gpx ou kml)"
+
+#~ msgid "Simplified file"
+#~ msgstr "Fichier simplifié"
+
+#~ msgid "KML"
+#~ msgstr "KML"
+
+#~ msgid "GPX"
+#~ msgstr "GPX"
+
+#~ msgid "Route file"
+#~ msgstr "Fichier de trajet"
+
+#~ msgid "Route files"
+#~ msgstr "Fichiers de trajet"
+
+#~ msgid "Reference route"
+#~ msgstr "Trajet de référence"
+
+#~ msgid "Associated file"
+#~ msgstr "Fichier associé"
+
+#~ msgid "Layer code"
+#~ msgstr "Code pour la couche"
+
+#~ msgid "Layer"
+#~ msgstr "Couche"
+
+#~ msgid "Area urn"
+#~ msgstr "Urn de la zone"
+
+#~ msgid "Welcome message"
+#~ msgstr "Message d'accueil"
+
+#~ msgid "Upper left corner"
+#~ msgstr "Coin en haut à gauche"
+
+#~ msgid "Lower right corner"
+#~ msgstr "Coin en bas à droite"
+
+#~ msgid "Default area"
+#~ msgstr "Zone par défaut"
+
+#~ msgid "Only one area is set by default"
+#~ msgstr "Seule une zone est définie par défaut"
+
+#~ msgid "Sub-categories checked by default"
+#~ msgstr "Sous-catégories cochées par défaut"
+
+#~ msgid "Sub-categories dynamicaly displayed"
+#~ msgstr "Sous-categories affichées dynamiquement"
+
+#~ msgid ""
+#~ "If checked, categories are only displayed in the menu if they are available "
+#~ "on the current extent."
+#~ msgstr ""
+#~ "Si coché, les catégories sont disponibles sur le menu seulement si elles "
+#~ "apparaissent sur la zone affichée."
+
+#~ msgid "Restricted to theses sub-categories"
+#~ msgstr "Restreindre à ces sous-categories"
+
+#~ msgid "If no sub-category is set all sub-categories are available"
+#~ msgstr ""
+#~ "Si aucune sous-catégorie n'est définie toutes les sous-catégories sont "
+#~ "disponibles"
+
+#~ msgid "Link to an external CSS"
+#~ msgstr "Lien vers une feuille de style externe"
+
+#~ msgid "Restrict to the area extent"
+#~ msgstr "Restreindre à l'étendue de la zone"
+
+#~ msgid "Default layer"
+#~ msgstr "Couche par défaut"
+
+#~ msgid "Layers"
+#~ msgstr "Couches"
+
+#~ msgid "Mandatory"
+#~ msgstr "Obligatoire"
+
+#~ msgid ""
+#~ "If no sub-category is set all the property applies to all sub-categories"
+#~ msgstr ""
+#~ "Si aucune sous-catégorie n'est précisée, cette propriété est disponible pour"
+#~ " toutes les sous-catégories"
+
+#~ msgid "Text"
+#~ msgstr "Texte"
+
+#~ msgid "Long text"
+#~ msgstr "Texte long"
+
+#~ msgid "Password"
+#~ msgstr "Mot de passe"
+
+#~ msgid "Type"
+#~ msgstr "Type"
+
+#~ msgid "Property model"
+#~ msgstr "Modèle de propriété"
+
+#~ msgid "Value"
+#~ msgstr "Valeur"
+
+#~ msgid "Property"
+#~ msgstr "Propriété"
+
+#~ msgid "Import pending"
+#~ msgstr "Import en attente"
+
+#~ msgid "Import processing"
+#~ msgstr "Import en cours"
+
+#~ msgid "Import successfuly done"
+#~ msgstr "Import fait avec succès"
+
+#~ msgid " %(new)d new item(s), %(updated)d updated item(s)"
+#~ msgstr " %(new)d nouveau(x) élément(s), %(updated)d élément(s) mis à jour"
+
+#~ msgid "Import failed"
+#~ msgstr "Import échoué"
+
+#~ msgid "Import canceled"
+#~ msgstr "Import annulé"
+
+#~ msgid "Export pending"
+#~ msgstr "Export en attente"
+
+#~ msgid "Export processing"
+#~ msgstr "Export en cours"
+
+#~ msgid "Export successfuly done"
+#~ msgstr "Export réalisé avec succès"
+
+#~ msgid " %(updated)d updated item(s)"
+#~ msgstr " %(updated)d éléments mis à jour"
+
+#~ msgid "Export failed"
+#~ msgstr "Export échoué"
+
+#~ msgid "Export canceled"
+#~ msgstr "Export annulé"
+
+#~ msgid "Bad zip file"
+#~ msgstr "Mauvais fichier zip"
+
+#~ msgid "Missing file(s) inside the zip file"
+#~ msgstr "Fichier(s) manquant(s) dans l'archive zip"
+
+#~ msgid "Bad XML file"
+#~ msgstr "Mauvais fichier XML"
+
+#~ msgid "Error while reading the data source."
+#~ msgstr "Erreur lors de la lecture de la source."
+
+#~ msgid "Type of geographic item of this shapefile is not managed by Chimère."
+#~ msgstr ""
+#~ "Les types des éléments géographiques de ce fichier Shapefile ne sont pas "
+#~ "gérés par Chimère."
+
+#~ msgid "Bad Shapefile"
+#~ msgstr "Mauvais fichier Shapefile"
+
+#~ msgid "Could not create file!"
+#~ msgstr "Ne peut pas créer le fichier !"
+
+#~ msgid "Failed to create field"
+#~ msgstr "Ne peut pas créer un champ"
+
+#~ msgid "Invalid CSV format"
+#~ msgstr "Fichier CSV non valide"
+
+#~ msgid "RSS feed is not well formed"
+#~ msgstr "Flux RSS non valide"
+
+#~ msgid "Nothing to import"
+#~ msgstr "Rien à importer"
+
+#~ msgid "New items imported - validate them before exporting"
+#~ msgstr "Nouveaux éléments importés - valider ceux-ci avant d'exporter"
+
+#~ msgid ""
+#~ "There are items from a former import not yet validated - validate them "
+#~ "before exporting"
+#~ msgstr ""
+#~ "Il y a des éléments d'un import précédent pas encore validé - Validez les "
+#~ "avant d'exporter"
+
+#~ msgid "Bad param"
+#~ msgstr "Mauvais paramètre"
+
+#~ msgid "No non ambigious tag is defined in the XAPI request"
+#~ msgstr "Pas de tag non ambigü définis dans la requête XAPI"
+
+#~ msgid ""
+#~ "No bounding box is defined in the XAPI request.If you are sure to manage the"
+#~ " entire planet set the bounding box to -180,-90,180,90"
+#~ msgstr ""
+#~ "Aucune « bounding box » définie dans la requête XAPI. Si vous êtes sûr de "
+#~ "vouloir lancer la requête sur la planète entière fixez la « bounding  box » "
+#~ "à -180,-90,180,90"
+
+#~ msgid "There are missing field(s) and/or errors in the submited form."
+#~ msgstr "Il y a des champs manquants ou des erreurs dans ce formulaire."
+
+#~ msgid "Bad file. Please check it with an external software."
+#~ msgstr "Fichier incohérent. Merci de le vérifier avec un logiciel externe."
+
+#~ msgid "Comments/request on the map"
+#~ msgstr "Commentaires/requètes sur la carte"
+
+#~ msgid ""
+#~ "Thank you for your contribution. It will be taken into account. If you have "
+#~ "left your email you may be contacted soon for more details."
+#~ msgstr ""
+#~ "Merci pour votre contribution. Elle va être prise en compte. Si vous avez "
+#~ "laissé votre courriel vous serez peut-être contacté bientôt pour plus de "
+#~ "détails."
+
+#~ msgid "Temporary error. Renew your message later."
+#~ msgstr "Erreur temporaire. Réenvoyez votre message plus tard."
+
+#~ msgid "No category available in this area."
+#~ msgstr "Pas de catégorie disponible sur cette zone."
+
+#~ msgid "Incorrect choice in the list"
+#~ msgstr "Choix incorrect dans la liste"
+
+#~ msgid "Latitude"
+#~ msgstr "Latitude"
+
+#~ msgid "Longitude"
+#~ msgstr "Longitude"
+
+#~ msgid "Invalid point"
+#~ msgstr "Point invalide"
+
+#~ msgid "Creation mode"
+#~ msgstr "Mode création"
+
+#~ msgid "To start drawing the route click on the toggle button: \"Draw\"."
+#~ msgstr ""
+#~ "Pour commencer le dessin cliquez sur le bouton&nbsp;: «&nbsp;Tracer&nbsp;»."
+
+#~ msgid "Then click on the map to begin the drawing."
+#~ msgstr "Puis cliquez sur la carte pour commencer le dessin."
+
+#~ msgid "You can add points by clicking again."
+#~ msgstr "Vous pouvez ajouter des points en cliquant de nouveau."
+
+#~ msgid ""
+#~ "To finish the drawing double click. When the drawing is finished you can "
+#~ "edit it."
+#~ msgstr ""
+#~ "Pour finir le tracé double-cliquez. Quand le tracé est fini vous pouvez "
+#~ "toujours l'éditer."
+
+#~ msgid ""
+#~ "While creating to undo a drawing click again on the toggle button \"Stop "
+#~ "drawing\"."
+#~ msgstr ""
+#~ "En mode création vous pouvez annuler un tracé en appuyant sur le bouton "
+#~ "«&nbsp;Arrêter le tracé&nbsp;»."
+
+#~ msgid "Modification mode"
+#~ msgstr "Mode modification"
+
+#~ msgid "To move a point click on it and drag it to the desired position."
+#~ msgstr ""
+#~ "Pour bouger un point, cliquez dessus, maintenez le click pour le déposer à "
+#~ "la position désirée."
+
+#~ msgid ""
+#~ "To delete a point move the mouse cursor over it and press the \"d\" or "
+#~ "\"Del\" key."
+#~ msgstr ""
+#~ "Pour supprimer un point, mettez le curseur de la souris sur celui-ci et "
+#~ "appuyez sur le touche «&nbsp;d&nbsp;» ou «&nbsp;Suppr&nbsp;»."
+
+#~ msgid ""
+#~ "To add a point click in the middle of a segment and drag the new point to "
+#~ "the desired position"
+#~ msgstr ""
+#~ "Pour ajouter un nouveau point, cliquez au milieu d'un des segments, "
+#~ "maintenez le bouton appuyé et déplacez le nouveau point à la position "
+#~ "désirée."
+
+#~ msgid "Give a name and set category before uploading a file."
+#~ msgstr ""
+#~ "Renseignez le nom et choisissez au moins une catégorie avant de déposer un "
+#~ "fichier."
+
+#~ msgid "Upload a route file (GPX or KML)"
+#~ msgstr "Déposer un trajet (fichier GPX ou KML)"
+
+#~ msgid "or"
+#~ msgstr "ou"
+
+#~ msgid "Start \"hand\" drawing"
+#~ msgstr "Commencer le tracé manuellement"
+
+#~ msgid "Move on the map"
+#~ msgstr "Se déplacer"
+
+#~ msgid "Draw"
+#~ msgstr "Tracer"
+
+#~ msgid "Hold CTRL, click and drag to select area on the map"
+#~ msgstr ""
+#~ "Maintenir la touche Control, cliquez puis glissez pour sélectionner une zone"
+#~ " sur la carte"
+
+#~ msgid "Select..."
+#~ msgstr "Sélectionner..."
+
+#~ msgid "Page not found"
+#~ msgstr "Page non trouvée"
+
+#~ msgid "Internal server error"
+#~ msgstr "Erreur interne du serveur"
+
+#~ msgid "Chimère administration"
+#~ msgstr "Administration de Chimère"
+
+#~ msgid "You must enable JavaScript in your browser to display Chimère."
+#~ msgstr ""
+#~ "Vous devez activer le JavaScript dans votre navigateur pour afficher "
+#~ "Chimère."
+
+#~ msgid ""
+#~ "If you have some requests or remarks about this site you can leave them "
+#~ "here."
+#~ msgstr ""
+#~ "Si vous avez des requètes, des remarques à propos de ce site vous pouvez "
+#~ "nous laisser un commentaire ici."
+
+#~ msgid "Submit"
+#~ msgstr "Proposer"
+
+#~ msgid "Date:"
+#~ msgstr "Date :"
+
+#~ msgid "Source:"
+#~ msgstr "Source :"
+
+#~ msgid "License:"
+#~ msgstr "Licence :"
+
+#~ msgid "Show multimedia gallery"
+#~ msgstr "Montrer la galerie multimedia"
+
+#~ msgid "Propose amendment"
+#~ msgstr "Proposer une modification"
+
+#~ msgid "I would like to propose an amendment for this item:"
+#~ msgstr "Je souhaiterais proposer une modification pour cet élément :"
+
+#~ msgid "Share on"
+#~ msgstr "Partager sur"
+
+#~ msgid "Share"
+#~ msgstr "Partager"
+
+#~ msgid "Add/modify a point of interest"
+#~ msgstr "Ajout d'un point d'intérêt"
+
+#~ msgid "Add/modify a route"
+#~ msgstr "Ajout ou modifier un trajet"
+
+#~ msgid "Topics"
+#~ msgstr "Thèmes"
+
+#~ msgid "Thank you for your submission!"
+#~ msgstr "Merci pour votre proposition !"
+
+#~ msgid "Upload a file"
+#~ msgstr "Déposer un fichier"
+
+#~ msgid "Upload"
+#~ msgstr "Déposer"
+
+#~ msgid "Areas:"
+#~ msgstr "Zones :"
+
+#~ msgid "Shortcuts"
+#~ msgstr "Raccourcis"
+
+#~ msgid "Zoom to"
+#~ msgstr "Zoomer sur"
+
+#~ msgid "Tell me more..."
+#~ msgstr "En savoir plus..."
+
+#~ msgid "Display markers and routes waiting for validation"
+#~ msgstr ""
+#~ "Afficher les points remarquables et les trajets en attente de validation"
+
+#~ msgid "This site uses Chimère"
+#~ msgstr "Ce site utilise Chimère"
+
+#~ msgid "Map"
+#~ msgstr "Carte"
+
+#~ msgid "Loading of the map in progress"
+#~ msgstr "Chargement de la carte en cours"
+
+#~ msgid "Permalink"
+#~ msgstr "Lien permanent"
+
+#~ msgid "Please use a modern browser or install the non free Flash-Plugin."
+#~ msgstr ""
+#~ "Utilisez un navigateur internet plus récent ou installez le greffon non "
+#~ "libre Flash."
+
+#~ msgid ""
+#~ "Your new proposition/modification has been submited. A moderator will treat "
+#~ "your submission shortly. Thanks!"
+#~ msgstr ""
+#~ "Votre proposition/modification a été soumise. Un modérateur va traiter votre"
+#~ " proposition sous peu. Merci !"
+
+#~ msgid "Thank you"
+#~ msgstr "Merci"
+
+#~ msgid "Add a new item"
+#~ msgstr "Ajout d'un nouvel élément"
+
+#~ msgid "Continue edition of this item"
+#~ msgstr "Continuer l'édition de cet élément"
+
+#~ msgid "Return to the map"
+#~ msgstr "Retourner à la carte"
+
+#~ msgid "Welcome"
+#~ msgstr "Accueil"
+
+#~ msgid "See it on the map"
+#~ msgstr "Voir sur la carte"
+
+#~ msgid "Subscribe to RSS feed"
+#~ msgstr "Souscrire à un flux RSS"
+
+#~ msgid "Type of RSS feed"
+#~ msgstr "Type de flux RSS"
+
+#~ msgid "All new points of interest"
+#~ msgstr "Tous les nouveaux points d'intérêt"
+
+#~ msgid "New points of interest by category"
+#~ msgstr "Les nouveaux points d'intérêt par catégorie"
+
+#~ msgid "New points of interest by area"
+#~ msgstr "Les nouveaux points d'intérêt par zone"
+
+#~ msgid "Choose a category"
+#~ msgstr "Choisir une catégorie"
+
+#~ msgid "Choose a pre-defined areas"
+#~ msgstr "Choisir une zone pré-définie"
+
+#~ msgid "Or select the area by zooming and panning this map"
+#~ msgstr ""
+#~ "Ou sélectionner une zone en zoomant et en se déplaçant sur cette carte"
+
+#~ msgid "Description:"
+#~ msgstr "Description :"
+
+#~ msgid ":"
+#~ msgstr " :"
+
+#~ msgid "Administration de Chimère"
+#~ msgstr "Administration de Chimère"
+
+#~ msgid "Submit a modification"
+#~ msgstr "Proposer une modification"
+
+#~ msgid "Add/modify a site"
+#~ msgstr "Ajouter ou modifier un site"
+
+#~ msgid "Categorys"
+#~ msgstr "Catégories"
+
+#~ msgid "Theme"
+#~ msgstr "Thème"
+
+#~ msgid "Subtheme"
+#~ msgstr "Sous-thème"
+
+#~ msgid "Subthemes"
+#~ msgstr "Sous-thèmes"
+
+#~ msgid "Themes"
+#~ msgstr "Thèmes"
+
+#~ msgid "Site name"
+#~ msgstr "Nom du site"

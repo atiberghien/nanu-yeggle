@@ -1,0 +1,19 @@
+{% load i18n %}
+{% load localeurl_tags %}
+
+<span id='page_title'>NanuYegglè
+{% for lang in LANGUAGES %}
+    <label class="lang-switch">[
+    {% ifequal lang.0 LANGUAGE_CODE %}
+        {{ lang.0 }}
+    {% else %}
+        <a href="{{ request.path|chlocale:lang.0 }}">{{ lang.0 }}</a>
+    {% endifequal %}
+    ]
+    {% if not forloop.last%}
+    /
+    {% endif %}
+    </label>
+    
+{% endfor %}
+</span>
