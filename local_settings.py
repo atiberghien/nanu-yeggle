@@ -12,7 +12,7 @@ STATIC_URL = '/static/'
 CHIMERE_OSM_API_URL = 'api06.dev.openstreetmap.org' # test URL
 CHIMERE_OSM_USER = 'osm_user'
 CHIMERE_OSM_PASSWORD = 'osm_pass'
-CHIMERE_SHARE_NETWORKS = False
+CHIMERE_SHARE_NETWORKS = []
 
 # Make this string unique, and don't share it with anybody.
 SECRET_KEY = "gziu+84j0$8-n6u$!@q$5yevh=8gm!)#*vc9ghj7s9g1rlg#r8"
