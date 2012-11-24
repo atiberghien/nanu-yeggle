@@ -16,4 +16,4 @@ psycopg2==2.4.5
 simplejson==2.6.1
 wsgiref==0.1.2
 
--e git+git@gitorious.org:~atiberghien/chimere/improvement.git@976119695728c98b4ec7161e2e4b305b53140493#egg=chimere
+-e git+git://gitorious.org/~atiberghien/chimere/improvement.git@976119695728c98b4ec7161e2e4b305b53140493#egg=chimere
